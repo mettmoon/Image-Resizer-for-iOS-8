@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC71CB2B19CAAB1B00B6FFFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71CB2A19CAAB1B00B6FFFB /* Cocoa.framework */; };
+		BC71CB3519CAAB1B00B6FFFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC71CB3319CAAB1B00B6FFFB /* InfoPlist.strings */; };
+		BC71CB3719CAAB1B00B6FFFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71CB3619CAAB1B00B6FFFB /* main.m */; };
+		BC71CB3B19CAAB1B00B6FFFB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BC71CB3919CAAB1B00B6FFFB /* Credits.rtf */; };
+		BC71CB3E19CAAB1B00B6FFFB /* IRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71CB3D19CAAB1B00B6FFFB /* IRAppDelegate.m */; };
+		BC71CB4119CAAB1B00B6FFFB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC71CB3F19CAAB1B00B6FFFB /* MainMenu.xib */; };
+		BC71CB4319CAAB1B00B6FFFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC71CB4219CAAB1B00B6FFFB /* Images.xcassets */; };
+		BC71CB4A19CAAB1B00B6FFFB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71CB4919CAAB1B00B6FFFB /* XCTest.framework */; };
+		BC71CB4B19CAAB1B00B6FFFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71CB2A19CAAB1B00B6FFFB /* Cocoa.framework */; };
+		BC71CB5319CAAB1C00B6FFFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC71CB5119CAAB1C00B6FFFB /* InfoPlist.strings */; };
+		BC71CB5519CAAB1C00B6FFFB /* Image_Resizer_for_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71CB5419CAAB1C00B6FFFB /* Image_Resizer_for_iOSTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC71CB4C19CAAB1C00B6FFFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC71CB1F19CAAB1B00B6FFFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC71CB2619CAAB1B00B6FFFB;
+			remoteInfo = "Image Resizer for iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC71CB2719CAAB1B00B6FFFB /* Image Resizer for iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Resizer for iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC71CB2A19CAAB1B00B6FFFB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BC71CB2D19CAAB1B00B6FFFB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BC71CB2E19CAAB1B00B6FFFB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BC71CB2F19CAAB1B00B6FFFB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC71CB3219CAAB1B00B6FFFB /* Image Resizer for iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Image Resizer for iOS-Info.plist"; sourceTree = "<group>"; };
+		BC71CB3419CAAB1B00B6FFFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC71CB3619CAAB1B00B6FFFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC71CB3819CAAB1B00B6FFFB /* Image Resizer for iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Image Resizer for iOS-Prefix.pch"; sourceTree = "<group>"; };
+		BC71CB3A19CAAB1B00B6FFFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BC71CB3C19CAAB1B00B6FFFB /* IRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRAppDelegate.h; sourceTree = "<group>"; };
+		BC71CB3D19CAAB1B00B6FFFB /* IRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRAppDelegate.m; sourceTree = "<group>"; };
+		BC71CB4019CAAB1B00B6FFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BC71CB4219CAAB1B00B6FFFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BC71CB4819CAAB1B00B6FFFB /* Image Resizer for iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image Resizer for iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC71CB4919CAAB1B00B6FFFB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BC71CB5019CAAB1C00B6FFFB /* Image Resizer for iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Image Resizer for iOSTests-Info.plist"; sourceTree = "<group>"; };
+		BC71CB5219CAAB1C00B6FFFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC71CB5419CAAB1C00B6FFFB /* Image_Resizer_for_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Image_Resizer_for_iOSTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC71CB2419CAAB1B00B6FFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC71CB2B19CAAB1B00B6FFFB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC71CB4519CAAB1B00B6FFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC71CB4B19CAAB1B00B6FFFB /* Cocoa.framework in Frameworks */,
+				BC71CB4A19CAAB1B00B6FFFB /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC71CB1E19CAAB1B00B6FFFB = {
+			isa = PBXGroup;
+			children = (
+				BC71CB3019CAAB1B00B6FFFB /* Image Resizer for iOS */,
+				BC71CB4E19CAAB1C00B6FFFB /* Image Resizer for iOSTests */,
+				BC71CB2919CAAB1B00B6FFFB /* Frameworks */,
+				BC71CB2819CAAB1B00B6FFFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC71CB2819CAAB1B00B6FFFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC71CB2719CAAB1B00B6FFFB /* Image Resizer for iOS.app */,
+				BC71CB4819CAAB1B00B6FFFB /* Image Resizer for iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC71CB2919CAAB1B00B6FFFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC71CB2A19CAAB1B00B6FFFB /* Cocoa.framework */,
+				BC71CB4919CAAB1B00B6FFFB /* XCTest.framework */,
+				BC71CB2C19CAAB1B00B6FFFB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC71CB2C19CAAB1B00B6FFFB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC71CB2D19CAAB1B00B6FFFB /* AppKit.framework */,
+				BC71CB2E19CAAB1B00B6FFFB /* CoreData.framework */,
+				BC71CB2F19CAAB1B00B6FFFB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BC71CB3019CAAB1B00B6FFFB /* Image Resizer for iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BC71CB3C19CAAB1B00B6FFFB /* IRAppDelegate.h */,
+				BC71CB3D19CAAB1B00B6FFFB /* IRAppDelegate.m */,
+				BC71CB3F19CAAB1B00B6FFFB /* MainMenu.xib */,
+				BC71CB4219CAAB1B00B6FFFB /* Images.xcassets */,
+				BC71CB3119CAAB1B00B6FFFB /* Supporting Files */,
+			);
+			path = "Image Resizer for iOS";
+			sourceTree = "<group>";
+		};
+		BC71CB3119CAAB1B00B6FFFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC71CB3219CAAB1B00B6FFFB /* Image Resizer for iOS-Info.plist */,
+				BC71CB3319CAAB1B00B6FFFB /* InfoPlist.strings */,
+				BC71CB3619CAAB1B00B6FFFB /* main.m */,
+				BC71CB3819CAAB1B00B6FFFB /* Image Resizer for iOS-Prefix.pch */,
+				BC71CB3919CAAB1B00B6FFFB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC71CB4E19CAAB1C00B6FFFB /* Image Resizer for iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC71CB5419CAAB1C00B6FFFB /* Image_Resizer_for_iOSTests.m */,
+				BC71CB4F19CAAB1C00B6FFFB /* Supporting Files */,
+			);
+			path = "Image Resizer for iOSTests";
+			sourceTree = "<group>";
+		};
+		BC71CB4F19CAAB1C00B6FFFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC71CB5019CAAB1C00B6FFFB /* Image Resizer for iOSTests-Info.plist */,
+				BC71CB5119CAAB1C00B6FFFB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC71CB2619CAAB1B00B6FFFB /* Image Resizer for iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC71CB5819CAAB1C00B6FFFB /* Build configuration list for PBXNativeTarget "Image Resizer for iOS" */;
+			buildPhases = (
+				BC71CB2319CAAB1B00B6FFFB /* Sources */,
+				BC71CB2419CAAB1B00B6FFFB /* Frameworks */,
+				BC71CB2519CAAB1B00B6FFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Image Resizer for iOS";
+			productName = "Image Resizer for iOS";
+			productReference = BC71CB2719CAAB1B00B6FFFB /* Image Resizer for iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC71CB4719CAAB1B00B6FFFB /* Image Resizer for iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC71CB5B19CAAB1C00B6FFFB /* Build configuration list for PBXNativeTarget "Image Resizer for iOSTests" */;
+			buildPhases = (
+				BC71CB4419CAAB1B00B6FFFB /* Sources */,
+				BC71CB4519CAAB1B00B6FFFB /* Frameworks */,
+				BC71CB4619CAAB1B00B6FFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC71CB4D19CAAB1C00B6FFFB /* PBXTargetDependency */,
+			);
+			name = "Image Resizer for iOSTests";
+			productName = "Image Resizer for iOSTests";
+			productReference = BC71CB4819CAAB1B00B6FFFB /* Image Resizer for iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC71CB1F19CAAB1B00B6FFFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = OliveStory;
+				TargetAttributes = {
+					BC71CB4719CAAB1B00B6FFFB = {
+						TestTargetID = BC71CB2619CAAB1B00B6FFFB;
+					};
+				};
+			};
+			buildConfigurationList = BC71CB2219CAAB1B00B6FFFB /* Build configuration list for PBXProject "Image Resizer for iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC71CB1E19CAAB1B00B6FFFB;
+			productRefGroup = BC71CB2819CAAB1B00B6FFFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC71CB2619CAAB1B00B6FFFB /* Image Resizer for iOS */,
+				BC71CB4719CAAB1B00B6FFFB /* Image Resizer for iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC71CB2519CAAB1B00B6FFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC71CB3519CAAB1B00B6FFFB /* InfoPlist.strings in Resources */,
+				BC71CB4319CAAB1B00B6FFFB /* Images.xcassets in Resources */,
+				BC71CB3B19CAAB1B00B6FFFB /* Credits.rtf in Resources */,
+				BC71CB4119CAAB1B00B6FFFB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC71CB4619CAAB1B00B6FFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC71CB5319CAAB1C00B6FFFB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC71CB2319CAAB1B00B6FFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC71CB3719CAAB1B00B6FFFB /* main.m in Sources */,
+				BC71CB3E19CAAB1B00B6FFFB /* IRAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC71CB4419CAAB1B00B6FFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC71CB5519CAAB1C00B6FFFB /* Image_Resizer_for_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC71CB4D19CAAB1C00B6FFFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC71CB2619CAAB1B00B6FFFB /* Image Resizer for iOS */;
+			targetProxy = BC71CB4C19CAAB1C00B6FFFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC71CB3319CAAB1B00B6FFFB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC71CB3419CAAB1B00B6FFFB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BC71CB3919CAAB1B00B6FFFB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC71CB3A19CAAB1B00B6FFFB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BC71CB3F19CAAB1B00B6FFFB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC71CB4019CAAB1B00B6FFFB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		BC71CB5119CAAB1C00B6FFFB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC71CB5219CAAB1C00B6FFFB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC71CB5619CAAB1C00B6FFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BC71CB5719CAAB1C00B6FFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BC71CB5919CAAB1C00B6FFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Image Resizer for iOS/Image Resizer for iOS-Prefix.pch";
+				INFOPLIST_FILE = "Image Resizer for iOS/Image Resizer for iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BC71CB5A19CAAB1C00B6FFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Image Resizer for iOS/Image Resizer for iOS-Prefix.pch";
+				INFOPLIST_FILE = "Image Resizer for iOS/Image Resizer for iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BC71CB5C19CAAB1C00B6FFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Image Resizer for iOS.app/Contents/MacOS/Image Resizer for iOS";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Image Resizer for iOS/Image Resizer for iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Image Resizer for iOSTests/Image Resizer for iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BC71CB5D19CAAB1C00B6FFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Image Resizer for iOS.app/Contents/MacOS/Image Resizer for iOS";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Image Resizer for iOS/Image Resizer for iOS-Prefix.pch";
+				INFOPLIST_FILE = "Image Resizer for iOSTests/Image Resizer for iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC71CB2219CAAB1B00B6FFFB /* Build configuration list for PBXProject "Image Resizer for iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC71CB5619CAAB1C00B6FFFB /* Debug */,
+				BC71CB5719CAAB1C00B6FFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC71CB5819CAAB1C00B6FFFB /* Build configuration list for PBXNativeTarget "Image Resizer for iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC71CB5919CAAB1C00B6FFFB /* Debug */,
+				BC71CB5A19CAAB1C00B6FFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC71CB5B19CAAB1C00B6FFFB /* Build configuration list for PBXNativeTarget "Image Resizer for iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC71CB5C19CAAB1C00B6FFFB /* Debug */,
+				BC71CB5D19CAAB1C00B6FFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC71CB1F19CAAB1B00B6FFFB /* Project object */;
+}
