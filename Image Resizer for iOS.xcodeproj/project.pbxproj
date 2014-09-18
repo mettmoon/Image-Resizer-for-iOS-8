@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC6B942519CACD5600A3998A /* IRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B942419CACD5600A3998A /* IRViewController.m */; };
+		BC6B942A19CACD9900A3998A /* ImageBrowserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B942719CACD9900A3998A /* ImageBrowserItem.m */; };
+		BC6B942B19CACD9900A3998A /* NSImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B942919CACD9900A3998A /* NSImage+Extras.m */; };
 		BC71CB2B19CAAB1B00B6FFFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71CB2A19CAAB1B00B6FFFB /* Cocoa.framework */; };
 		BC71CB3519CAAB1B00B6FFFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC71CB3319CAAB1B00B6FFFB /* InfoPlist.strings */; };
 		BC71CB3719CAAB1B00B6FFFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71CB3619CAAB1B00B6FFFB /* main.m */; };
@@ -31,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC6B942319CACD5600A3998A /* IRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRViewController.h; sourceTree = "<group>"; };
+		BC6B942419CACD5600A3998A /* IRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRViewController.m; sourceTree = "<group>"; };
+		BC6B942619CACD9900A3998A /* ImageBrowserItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserItem.h; sourceTree = "<group>"; };
+		BC6B942719CACD9900A3998A /* ImageBrowserItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserItem.m; sourceTree = "<group>"; };
+		BC6B942819CACD9900A3998A /* NSImage+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Extras.h"; sourceTree = "<group>"; };
+		BC6B942919CACD9900A3998A /* NSImage+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Extras.m"; sourceTree = "<group>"; };
 		BC71CB2719CAAB1B00B6FFFB /* Image Resizer for iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Resizer for iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC71CB2A19CAAB1B00B6FFFB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BC71CB2D19CAAB1B00B6FFFB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,6 +59,8 @@
 		BC71CB5019CAAB1C00B6FFFB /* Image Resizer for iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Image Resizer for iOSTests-Info.plist"; sourceTree = "<group>"; };
 		BC71CB5219CAAB1C00B6FFFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC71CB5419CAAB1C00B6FFFB /* Image_Resizer_for_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Image_Resizer_for_iOSTests.m; sourceTree = "<group>"; };
+		BCF7FDEA19CAD771001AE5A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		BCF7FDEB19CAD7D1001AE5A1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MainMenu.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +129,12 @@
 				BC71CB3C19CAAB1B00B6FFFB /* IRAppDelegate.h */,
 				BC71CB3D19CAAB1B00B6FFFB /* IRAppDelegate.m */,
 				BC71CB3F19CAAB1B00B6FFFB /* MainMenu.xib */,
+				BC6B942619CACD9900A3998A /* ImageBrowserItem.h */,
+				BC6B942719CACD9900A3998A /* ImageBrowserItem.m */,
+				BC6B942819CACD9900A3998A /* NSImage+Extras.h */,
+				BC6B942919CACD9900A3998A /* NSImage+Extras.m */,
+				BC6B942319CACD5600A3998A /* IRViewController.h */,
+				BC6B942419CACD5600A3998A /* IRViewController.m */,
 				BC71CB4219CAAB1B00B6FFFB /* Images.xcassets */,
 				BC71CB3119CAAB1B00B6FFFB /* Supporting Files */,
 			);
@@ -255,6 +272,9 @@
 			files = (
 				BC71CB3719CAAB1B00B6FFFB /* main.m in Sources */,
 				BC71CB3E19CAAB1B00B6FFFB /* IRAppDelegate.m in Sources */,
+				BC6B942519CACD5600A3998A /* IRViewController.m in Sources */,
+				BC6B942B19CACD9900A3998A /* NSImage+Extras.m in Sources */,
+				BC6B942A19CACD9900A3998A /* ImageBrowserItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +317,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				BC71CB4019CAAB1B00B6FFFB /* Base */,
+				BCF7FDEA19CAD771001AE5A1 /* en */,
+				BCF7FDEB19CAD7D1001AE5A1 /* ko */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -467,6 +489,7 @@
 				BC71CB5A19CAAB1C00B6FFFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC71CB5B19CAAB1C00B6FFFB /* Build configuration list for PBXNativeTarget "Image Resizer for iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +498,7 @@
 				BC71CB5D19CAAB1C00B6FFFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
