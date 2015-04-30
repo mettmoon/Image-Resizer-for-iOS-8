@@ -6,6 +6,7 @@ iOS 개발자를 위한 이미지 리사이징 앱입니다.
 `image.png` 를 넣으면 `image.png`, `image@2x.png`, `image@3x.png` 로 나오게 해줍니다.
 
 ![실행화면](/readmeImage/image1.png)
+
 [초기버전 영상보기 Youtube](http://www.youtube.com/watch?v=Tj3a77mkXvY&feature=youtu.be)
 
 ## 요소 설명 ##
