@@ -234,7 +234,7 @@
                 scaleRatio *= longestSide / (size.height  / originalScale);
             }
         }
-        NSSize targetSize = NSMakeSize(size.width / originalScale * scaleRatio, size.height / originalScale * scaleRatio);
+        NSSize targetSize = NSMakeSize(round(size.width / originalScale * scaleRatio), round(size.height / originalScale * scaleRatio));
         NSImage* resized = [[NSImage alloc] initWithSize:targetSize];
         [resized lockFocus];
         [imageRep drawInRect:NSMakeRect(0, 0, targetSize.width, targetSize.height)];
