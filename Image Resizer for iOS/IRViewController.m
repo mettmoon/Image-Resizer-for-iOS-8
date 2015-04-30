@@ -17,6 +17,7 @@
 @property (weak) IBOutlet NSProgressIndicator *progressIndicator;
 @property (weak) IBOutlet NSSegmentedControl *directionSegmentControl;
 @property (weak) IBOutlet NSButton *checkButton;
+@property (weak) IBOutlet NSTextField *scaleTextField;
 
 
 + (void)addImageFromPath:(NSString*)path toArray:(NSMutableArray*)array;
@@ -37,13 +38,48 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    self.checkButton.state = [userDefaults integerForKey:@"ImageSizeChecked"];
+    if([userDefaults stringForKey:@"SizeValue"]){
+        self.sizeTextField.stringValue = [userDefaults stringForKey:@"SizeValue"];
+    }
+    self.directionSegmentControl.selectedSegment = [userDefaults integerForKey:@"SelectedDirectionSegment"];
+    if([userDefaults stringForKey:@"ScaleValue"]){
+        self.scaleTextField.stringValue = [userDefaults stringForKey:@"ScaleValue"];
+    }
+
 }
 - (IBAction)directionValueChanged:(NSSegmentedControl *)sender {
 
 }
 
 - (IBAction)resizePressed:(NSButton *)sender {
+    
+    if(self.checkButton.state == 1){
+        if([self.sizeTextField floatValue] <1){
+            NSAlert *alert = [[NSAlert alloc] init];
+            [alert addButtonWithTitle:@"OK"];
+            [alert setMessageText:@"form error"];
+            [alert setInformativeText:@"Check a image size"];
+            [alert setAlertStyle:NSWarningAlertStyle];
+            [alert runModal];
+            return;
+        }
+    }else if(self.scaleTextField.floatValue <=0){
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert addButtonWithTitle:@"OK"];
+        [alert setMessageText:@"form error"];
+        [alert setInformativeText:@"sclae value must be over 0"];
+        [alert setAlertStyle:NSWarningAlertStyle];
+        [alert runModal];
+        return;
+    }
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setInteger:self.checkButton.state forKey:@"ImageSizeChecked"];
+    [userDefaults setObject:self.sizeTextField.stringValue forKey:@"SizeValue"];
+    [userDefaults setInteger:self.directionSegmentControl.selectedSegment forKey:@"SelectedDirectionSegment"];
+    [userDefaults setObject:self.scaleTextField.stringValue forKey:@"ScaleValue"];
+
     __block NSMutableArray *__browserData = self.browserData;
     __block IKImageBrowserView *__imageBrowser = self.imageBrowser;
     __block NSProgressIndicator *__progressIndicator = self.progressIndicator;
@@ -182,7 +218,7 @@
     }
     
     
-    CGFloat originalScale = 3;
+    CGFloat originalScale = self.scaleTextField.floatValue;
     BOOL fixedSize = self.checkButton.state == 1;
     for(NSNumber *number in @[@(1),@(2),@(3)]){
         NSString *nameExtention = @"";
@@ -190,15 +226,15 @@
             nameExtention = [NSString stringWithFormat:@"@%@x",number.stringValue];
         }
         NSString *saveFileName = [[[[item.path lastPathComponent] stringByDeletingPathExtension] stringByAppendingString:nameExtention] stringByAppendingPathExtension:[item.path pathExtension]];
-        CGFloat scaleRatio = number.integerValue / originalScale;
+        CGFloat scaleRatio = number.integerValue;
         if(fixedSize){
             if(self.directionSegmentControl.selectedSegment==0){
-                scaleRatio /= size.width  / 3 /longestSide;
+                scaleRatio *= longestSide / (size.width  / originalScale);
             }else{
-                scaleRatio /= size.height  / 3 /longestSide;
+                scaleRatio *= longestSide / (size.height  / originalScale);
             }
         }
-        NSSize targetSize = NSMakeSize(size.width*scaleRatio, size.height*scaleRatio);
+        NSSize targetSize = NSMakeSize(size.width / originalScale * scaleRatio, size.height / originalScale * scaleRatio);
         NSImage* resized = [[NSImage alloc] initWithSize:targetSize];
         [resized lockFocus];
         [imageRep drawInRect:NSMakeRect(0, 0, targetSize.width, targetSize.height)];

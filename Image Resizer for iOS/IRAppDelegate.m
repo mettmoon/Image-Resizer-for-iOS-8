@@ -14,5 +14,8 @@
 {
     // Insert code here to initialize your application
 }
+- (IBAction)helpAction:(id)sender {
+    [[NSWorkspace sharedWorkspace] openFile:@"https://github.com/mettmoon/Image-Resizer-for-iOS-8" withApplication:@"Safari.app"];
+}
 
 @end
