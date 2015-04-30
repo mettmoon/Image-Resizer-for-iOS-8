@@ -18,6 +18,7 @@
 @property (weak) IBOutlet NSSegmentedControl *directionSegmentControl;
 @property (weak) IBOutlet NSButton *checkButton;
 @property (weak) IBOutlet NSTextField *scaleTextField;
+@property (weak) IBOutlet NSTextFieldCell *exportScaleTextField;
 
 
 + (void)addImageFromPath:(NSString*)path toArray:(NSMutableArray*)array;
@@ -47,9 +48,9 @@
     if([userDefaults stringForKey:@"ScaleValue"]){
         self.scaleTextField.stringValue = [userDefaults stringForKey:@"ScaleValue"];
     }
-
-}
-- (IBAction)directionValueChanged:(NSSegmentedControl *)sender {
+    if([userDefaults stringForKey:@"ExportScaleValue"]){
+        self.exportScaleTextField.stringValue = [userDefaults stringForKey:@"ExportScaleValue"];
+    }
 
 }
 
@@ -79,6 +80,7 @@
     [userDefaults setObject:self.sizeTextField.stringValue forKey:@"SizeValue"];
     [userDefaults setInteger:self.directionSegmentControl.selectedSegment forKey:@"SelectedDirectionSegment"];
     [userDefaults setObject:self.scaleTextField.stringValue forKey:@"ScaleValue"];
+    [userDefaults setObject:self.exportScaleTextField.stringValue forKey:@"ExportScaleValue"];
 
     __block NSMutableArray *__browserData = self.browserData;
     __block IKImageBrowserView *__imageBrowser = self.imageBrowser;
@@ -220,13 +222,19 @@
     
     CGFloat originalScale = self.scaleTextField.floatValue;
     BOOL fixedSize = self.checkButton.state == 1;
-    for(NSNumber *number in @[@(1),@(2),@(3)]){
+    NSMutableArray *exportScaleArray = [NSMutableArray new];
+    for(NSString *value in [[self.exportScaleTextField.stringValue stringByReplacingOccurrencesOfString:@" " withString:@""] componentsSeparatedByString:@","]){
+        if([value floatValue] > 0){
+            [exportScaleArray addObject:@([value floatValue])];
+        }
+    }
+    for(NSNumber *number in exportScaleArray){
         NSString *nameExtention = @"";
-        if(number.integerValue >1){
+        if(number.floatValue >1){
             nameExtention = [NSString stringWithFormat:@"@%@x",number.stringValue];
         }
         NSString *saveFileName = [[[[item.path lastPathComponent] stringByDeletingPathExtension] stringByAppendingString:nameExtention] stringByAppendingPathExtension:[item.path pathExtension]];
-        CGFloat scaleRatio = number.integerValue;
+        CGFloat scaleRatio = number.floatValue;
         if(fixedSize){
             if(self.directionSegmentControl.selectedSegment==0){
                 scaleRatio *= longestSide / (size.width  / originalScale);
