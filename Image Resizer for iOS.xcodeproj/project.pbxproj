@@ -15,12 +15,12 @@
 		BC71CB3719CAAB1B00B6FFFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71CB3619CAAB1B00B6FFFB /* main.m */; };
 		BC71CB3B19CAAB1B00B6FFFB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BC71CB3919CAAB1B00B6FFFB /* Credits.rtf */; };
 		BC71CB3E19CAAB1B00B6FFFB /* IRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71CB3D19CAAB1B00B6FFFB /* IRAppDelegate.m */; };
-		BC71CB4119CAAB1B00B6FFFB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC71CB3F19CAAB1B00B6FFFB /* MainMenu.xib */; };
 		BC71CB4319CAAB1B00B6FFFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC71CB4219CAAB1B00B6FFFB /* Images.xcassets */; };
 		BC71CB4A19CAAB1B00B6FFFB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71CB4919CAAB1B00B6FFFB /* XCTest.framework */; };
 		BC71CB4B19CAAB1B00B6FFFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC71CB2A19CAAB1B00B6FFFB /* Cocoa.framework */; };
 		BC71CB5319CAAB1C00B6FFFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC71CB5119CAAB1C00B6FFFB /* InfoPlist.strings */; };
 		BC71CB5519CAAB1C00B6FFFB /* Image_Resizer_for_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC71CB5419CAAB1C00B6FFFB /* Image_Resizer_for_iOSTests.m */; };
+		BCC9F3C21AF1D5C000B553D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC9F3C11AF1D5C000B553D7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,15 +52,13 @@
 		BC71CB3A19CAAB1B00B6FFFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		BC71CB3C19CAAB1B00B6FFFB /* IRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRAppDelegate.h; sourceTree = "<group>"; };
 		BC71CB3D19CAAB1B00B6FFFB /* IRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRAppDelegate.m; sourceTree = "<group>"; };
-		BC71CB4019CAAB1B00B6FFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		BC71CB4219CAAB1B00B6FFFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BC71CB4819CAAB1B00B6FFFB /* Image Resizer for iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image Resizer for iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC71CB4919CAAB1B00B6FFFB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BC71CB5019CAAB1C00B6FFFB /* Image Resizer for iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Image Resizer for iOSTests-Info.plist"; sourceTree = "<group>"; };
 		BC71CB5219CAAB1C00B6FFFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC71CB5419CAAB1C00B6FFFB /* Image_Resizer_for_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Image_Resizer_for_iOSTests.m; sourceTree = "<group>"; };
-		BCF7FDEA19CAD771001AE5A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		BCF7FDEB19CAD7D1001AE5A1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		BCC9F3C11AF1D5C000B553D7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +126,7 @@
 			children = (
 				BC71CB3C19CAAB1B00B6FFFB /* IRAppDelegate.h */,
 				BC71CB3D19CAAB1B00B6FFFB /* IRAppDelegate.m */,
-				BC71CB3F19CAAB1B00B6FFFB /* MainMenu.xib */,
+				BCC9F3C11AF1D5C000B553D7 /* Main.storyboard */,
 				BC6B942619CACD9900A3998A /* ImageBrowserItem.h */,
 				BC6B942719CACD9900A3998A /* ImageBrowserItem.m */,
 				BC6B942819CACD9900A3998A /* NSImage+Extras.h */,
@@ -249,9 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC71CB3519CAAB1B00B6FFFB /* InfoPlist.strings in Resources */,
+				BCC9F3C21AF1D5C000B553D7 /* Main.storyboard in Resources */,
 				BC71CB4319CAAB1B00B6FFFB /* Images.xcassets in Resources */,
 				BC71CB3B19CAAB1B00B6FFFB /* Credits.rtf in Resources */,
-				BC71CB4119CAAB1B00B6FFFB /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,16 +309,6 @@
 				BC71CB3A19CAAB1B00B6FFFB /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		BC71CB3F19CAAB1B00B6FFFB /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC71CB4019CAAB1B00B6FFFB /* Base */,
-				BCF7FDEA19CAD771001AE5A1 /* en */,
-				BCF7FDEB19CAD7D1001AE5A1 /* ko */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		BC71CB5119CAAB1C00B6FFFB /* InfoPlist.strings */ = {

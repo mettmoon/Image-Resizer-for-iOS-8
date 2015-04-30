@@ -35,7 +35,10 @@
     [self.sizeTextField setEnabled:imageSizeEnabled];
     [self.directionSegmentControl setEnabled:imageSizeEnabled];
 }
-
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    
+}
 - (IBAction)directionValueChanged:(NSSegmentedControl *)sender {
 
 }
