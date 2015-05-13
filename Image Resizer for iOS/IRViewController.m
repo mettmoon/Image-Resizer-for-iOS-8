@@ -51,6 +51,7 @@
     if([userDefaults stringForKey:@"ExportScaleValue"]){
         self.exportScaleTextField.stringValue = [userDefaults stringForKey:@"ExportScaleValue"];
     }
+    [self checkAction:self.checkButton];
 
 }
 

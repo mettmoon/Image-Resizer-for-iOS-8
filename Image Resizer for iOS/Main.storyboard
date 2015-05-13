@@ -38,7 +38,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="571" height="372"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <ikImageBrowserView autoresizesSubviews="NO" zoomValue="nan" allowsMultipleSelection="NO" allowsEmptySelection="NO" animates="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q96-20-G9l">
+                                        <ikImageBrowserView autoresizesSubviews="NO" misplaced="YES" zoomValue="nan" allowsMultipleSelection="NO" allowsEmptySelection="NO" animates="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q96-20-G9l">
                                             <rect key="frame" x="0.0" y="0.0" width="550" height="591"/>
                                             <shadow key="shadow">
                                                 <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
