@@ -203,7 +203,12 @@
     NSBitmapImageRep* imageRep = [NSBitmapImageRep imageRepWithContentsOfFile:item.path];
     // Issues with some PNG files: https://discussions.apple.com/thread/1976694?start=0&tstart=0
     if (!imageRep) return;
-    NSSize size = [imageRep size];
+    NSInteger width = 0;
+    NSInteger height = 0;
+    
+    if ([imageRep pixelsWide] > width) width = [imageRep pixelsWide];
+    if ([imageRep pixelsHigh] > height) height = [imageRep pixelsHigh];
+    NSSize size = NSMakeSize(width, height);
     for(NSNumber *number in @[@(3),@(2)]){
         if((int)size.width % number.integerValue != 0 || (int)size.height % number.integerValue != 0){
             NSLog(@"%@ is not multiple of %@",item.path,number.stringValue);
