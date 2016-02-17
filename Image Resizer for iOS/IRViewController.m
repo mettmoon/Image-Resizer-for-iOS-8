@@ -10,7 +10,7 @@
 #import "ImageBrowserItem.h"
 #import "NSImage+Extras.h"
 
-@interface IRViewController ()
+@interface IRViewController ()<NSTextFieldDelegate>
 @property (weak) IBOutlet IKImageBrowserView *imageBrowser;
 @property (nonatomic,strong) NSMutableArray* browserData;
 @property (weak) IBOutlet NSTextField *sizeTextField;
@@ -184,9 +184,10 @@
     }
     
     // Allow certain file extensions
-
-    if ([[path pathExtension] caseInsensitiveCompare:@"png"] != NSOrderedSame) {
-        NSLog(@"file is not PNG");
+    BOOL isPNG = [[path pathExtension] caseInsensitiveCompare:@"png"] == NSOrderedSame;
+    BOOL isJPG = [[path pathExtension] caseInsensitiveCompare:@"jpg"] == NSOrderedSame;
+    if(!(isPNG || isJPG)){
+        NSLog(@"file is not image file");
         return;
     }
     NSImage* image = [NSImage thumbnailFromPath:path];
@@ -254,14 +255,41 @@
         [imageRep drawInRect:NSMakeRect(0, 0, targetSize.width, targetSize.height)];
         [resized unlockFocus];
         NSBitmapImageRep* resizedRep = [NSBitmapImageRep imageRepWithData:[resized TIFFRepresentation]];
-        NSData *data = [resizedRep representationUsingType:NSPNGFileType properties:nil];
-        [data writeToFile:[saveFolderPath stringByAppendingPathComponent:saveFileName] atomically:YES];
+        
+        NSData *data = nil;
+        BOOL isPNG = [item.path.pathExtension caseInsensitiveCompare:@"png"] == NSOrderedSame;
+        BOOL isJPG = [item.path.pathExtension caseInsensitiveCompare:@"jpg"] == NSOrderedSame;
+
+        if(isPNG){
+            data = [resizedRep representationUsingType:NSPNGFileType properties:@{}];
+        }else if(isJPG){
+            data = [resizedRep representationUsingType:NSJPEGFileType properties:@{}];
+        }
+        if(data){
+            [data writeToFile:[saveFolderPath stringByAppendingPathComponent:saveFileName] atomically:YES];
+        }
     }
-    
-    
     
     
 }
 
+#pragma mark NSTextFieldDelegate
+- (BOOL)control:(NSControl *)control textShouldEndEditing:(NSText *)fieldEditor{
+    return YES; 
+}
+- (void)controlTextDidChange:(NSNotification *)obj;{
+    NSTextField *textField = obj.object;
+    if ([textField.stringValue isEqualToString:@"2.0"]){
+        self.exportScaleTextField.stringValue = @"1,2";
+    }else if ([textField.stringValue isEqualToString:@"3.0"]){
+        self.exportScaleTextField.stringValue = @"1,2,3";
+    }else if ([textField.stringValue isEqualToString:@"1.0"]){
+        self.exportScaleTextField.stringValue = @"1";
+    }
+}
+
+- (BOOL)control:(NSControl *)control isValidObject:(id)obj{
+    return YES;
+}
 
 @end
