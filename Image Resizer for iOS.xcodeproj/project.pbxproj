@@ -400,6 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Image Resizer for iOS/Image Resizer for iOS-Prefix.pch";
 				INFOPLIST_FILE = "Image Resizer for iOS/Image Resizer for iOS-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -413,6 +414,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Image Resizer for iOS/Image Resizer for iOS-Prefix.pch";
 				INFOPLIST_FILE = "Image Resizer for iOS/Image Resizer for iOS-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
