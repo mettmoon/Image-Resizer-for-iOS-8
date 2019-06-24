@@ -1,0 +1,21 @@
+# Global GIT ignored files
+
+# Ignore X-code files
+build/
+*~.nib
+*.so
+*.pbxuser
+*.mode*
+*.perspective*
+# Xcode 4
+project.xcworkspace/
+xcuserdata/
+
+# UI Automation Test files
+*.trace
+
+# OSX Specific files
+.DS_Store
+
+# Textmate project file
+*.tmproj
